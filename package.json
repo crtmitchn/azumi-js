@@ -1,0 +1,50 @@
+{
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "chalk": "^4.1.1",
+    "discord-buttons": "^3.2.1",
+    "discord.js": "^12.5.3",
+    "distube": "^2.8.15",
+    "dotenv": "^10.0.0",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "*",
+    "moment-js": "^1.1.15",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^5.12.14",
+    "quick.db": "^7.1.3",
+    "util": "^0.12.4",
+    "utils": "^0.3.1",
+    "yt-search": "^2.9.0",
+    "ytdl": "^1.4.1",
+    "ytdl-core": "^4.8.3"
+  },
+  "name": "azumibot",
+  "version": "0.0.1",
+  "main": "worker.js",
+  "scripts": {
+    "lint1": "eslint --ignore-path .gitignore .",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "eslint src --ext .js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wylitch/azumijs.git"
+  },
+  "author": "wylite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wylitch/azumijs/issues"
+  },
+  "homepage": "https://github.com/wylitch/azumijs#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  }
+}
