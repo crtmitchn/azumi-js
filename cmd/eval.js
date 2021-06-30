@@ -23,16 +23,15 @@ module.exports = {
       message.channel.send(`\`\`\`js\n${e}\n\`\`\``)
     }
   },
-  name: ['eval'],
+  name: ['eval', 'ebal'],
   description: "Evaluate user\'s imput.",
-  aliases: ['ebal', 'evaluate'],
   permissions: {
     client: [],
     member: []
   },
   help: {
     category: 'Indev',
-    argumengs: 'Not granted',
+    arguments: 'Not granted',
     examples: 'a.eval 1+1'
   }
 }

@@ -9,7 +9,7 @@ function getCommand (client, name) {
 module.exports = {
   name: 'message',
   run: async function (client, message) {
-    if (message.author.client || !message.content.startsWith(CONFIG.prefixDefault) || message.channel.type === 'dm') return
+    if (message.author.bot || !message.content.startsWith(CONFIG.prefixDefault) || message.channel.type === 'dm') return
 
     const messageArray = message.content.split(/\s+/g)
     const cmd = messageArray[0].slice(CONFIG.prefixDefault.length)
@@ -17,9 +17,9 @@ module.exports = {
 
     const command = getCommand(client, cmd.toLowerCase())
     if (!command) return
-
     if (!message.guild.me.permissions.has('SEND_MESSAGES') || !message.channel.permissionsFor(client.user).has('SEND_MESSAGES')) return
     if (!message.guild.me.permissions.has('EMBED_LINKS') || !message.channel.permissionsFor(client.user).has('EMBED_LINKS')) return message.channel.send('I can\'t send embeds on this server, give me that permission!')
+
     try {
       command.run(client, message, args)
     } catch (e) {
