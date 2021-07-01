@@ -8,7 +8,7 @@ const Client = require('../lib/client')
 */
 function activities (client) {
   return [
-    { name: 'for guilds', options: { type: 'WATCHING' } },
+    { name: 'some anime', options: { type: 'WATCHING' } },
     { name: 'a.help', options: { type: 'PLAYING' } },
     { name: `${client.users.cache.size} users`, options: { type: 'COMPETING' } }
   ]
