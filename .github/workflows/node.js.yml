@@ -26,5 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install discord.js@12.4.1 chalk fs mongoose dotenv
+    - run: npm install discord.js@12.4.1 chalk fs 
     - run: node .
